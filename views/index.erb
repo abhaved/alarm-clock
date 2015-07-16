@@ -5,17 +5,17 @@
   <title>title</title>
  </head>
  <body>
-  <p> 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/e-ORhEE9VVg?autoplay=1;loop=1" frameborder="0" allowfullscreen></iframe>
-    
-     <form>
-     <p>Please enter your answer.</p><input type='text' name ='answer'> <!--name = KEY in HASH-->
-     <input type="submit" value="Submit">
+ 
+
+
+  
+    <%=@time%> 
+   
+    <form method="POST" action="/riddle">
+   <p> Please enter a time: </p>  <input type='text' name='sentence'> <!-- name = key in a hash -->
+     <input type='submit' value='submit'>
+  
    </form>
+      </body>
    
-    
-   
-   
-   
- </body>
-</html>
+   </html>
