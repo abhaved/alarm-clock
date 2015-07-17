@@ -16,19 +16,8 @@ class MyApp < Sinatra::Base
     if answer_method(@answer, riddle) == true
       erb :results
     else 
-<<<<<<< HEAD
       $question = riddle
       erb :wrong
     end
   end 
 end
-=======
-      erb :index
-    end
-  end
-  
-  
-  
-  
-end
->>>>>>> 7330372c5cd177c320bbb4d3046698b76f81b1d7
