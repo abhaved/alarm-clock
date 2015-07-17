@@ -15,5 +15,10 @@ def timer
     end
 end
 
+<<<<<<< HEAD
 puts user_time
 puts timer
+=======
+# puts user_time
+# puts timer
+>>>>>>> 7330372c5cd177c320bbb4d3046698b76f81b1d7
