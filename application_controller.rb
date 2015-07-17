@@ -1,19 +1,23 @@
 require 'bundler'
 require_relative 'models/riddle.rb'
-require_relative 'models/alarm.rb'
 Bundler.require
 
 class MyApp < Sinatra::Base
   
   get '/' do
-    @time = user_time
+    $question = riddle
     erb :index
   end
   
-  get '/video' do  #/about_me == www.mywebsite.com/about_me / == www.mywebsite.com/
-    @question = riddle
-    erb :video
-  end  
-  
-  
+  post '/results' do
+    riddle = params[:riddle]
+    @answer = params[:answer]
+    
+    if answer_method(@answer, riddle) == true
+      erb :results
+    else 
+      $question = riddle
+      erb :wrong
+    end
+  end 
 end

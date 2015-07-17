@@ -1,0 +1,41 @@
+#body1
+{
+background-image: url(http://abyss.uoregon.edu/~js/images/black_hole_image.jpg);
+}
+
+.website
+{
+  text-align: center;
+  font-family: sans-serif;
+  color: #FF9900  
+}
+
+h1
+{
+  font-size: 50px
+}
+
+#body2
+{
+  background-image: url(http://fmuniversoquimili.com.ar/wp-content/uploads/2014/10/tumblr_wallpapers_iphone_hipster.jpg);
+  background-size: 1200px 1000px
+}
+
+.website2
+{
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+  font-size: 100px
+}
+
+.riddle
+{
+  color: white;
+  font-size: 25px
+}
+
+.wrong
+{
+  color: red
+}
