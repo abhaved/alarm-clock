@@ -11,17 +11,17 @@
     <h1>WELCOME TO THE FRUSTRATION GAME!</h1>
     
     <h2>Try and stop the extremely irritating song from playing by solving the riddle below. Good luck!</h2>
-    
-    <br>
-      
-    <img src="http://media.giphy.com/media/r5jHiw40rx5OE/giphy.gif">
-    
+        
     <div class="wrong">  
     <h3>Wrong! Try again!</h3>
     </div>
       
       <embed name="friday" src="friday.mp3" loop="true" hidden="true" autostart="true">
     
+      <img src="http://media.giphy.com/media/r5jHiw40rx5OE/giphy.gif">
+      
+    <br>
+    <br>
     <br>
     
     <div class="riddle">
@@ -29,10 +29,9 @@
     </div>
       
     <br>
-    <br>
       
     <form method="POST" action="/results">
-      <p>Please enter your answer:</p><input type='text' name='answer'>
+      <p>Please enter your answer (be careful, some answers are case sensitive):</p><input type='text' name='answer'>
       <input type='submit' value='submit'> 
       <input type="hidden" name="riddle" value="<%=$question%>"> 
     </form>
