@@ -15,5 +15,5 @@ def timer
     end
 end
 
-puts user_time
-puts timer
+# puts user_time
+# puts timer

@@ -2,20 +2,26 @@
 <html>
  <head>
   <meta charset="UTF-8">
-  <title>title</title>
+  <title>Friday Loop</title>
  </head>
- <body>
- 
-
-
-  
-    <%=@time%> 
-   
-    <form method="POST" action="/riddle">
-   <p> Please enter a time: </p>  <input type='text' name='sentence'> <!-- name = key in a hash -->
-     <input type='submit' value='submit'>
-  
-   </form>
-      </body>
-   
-   </html>
+  <body>
+    
+    <h1>Welcome to this potentially frustrating game!</h1>
+    
+    <h2>Try and stop the extremely irritating song from playing by solving the riddle below. Good luck!</h2>
+    <!--<video width="320" height="240" loop="true" and  autoplay="autoplay" >
+  <source src="../Friday.mp4" type="video/mp4">
+</video>-->
+    <div class="video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/kfVsfOSbJY0?autoplay=1;loop=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <%=$question%>
+    <form method="POST" action="/results">
+      <p>Please enter your answer:</p><input type='text' name='answer'>
+      <input type='submit' value='submit'> 
+      <input type="hidden" name="riddle" value="<%=$question%>"> 
+    </form>
+    
+    
+  </body>
+</html>
